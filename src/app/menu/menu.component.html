@@ -1,0 +1,41 @@
+<!-- Basic menu -->
+<!-- <mat-menu #appMenu='matMenu'>
+    <button mat-menu-item>FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+</mat-menu>
+
+<button [matMenuTriggerFor]='appMenu'>Menu</button> -->
+
+<!-- Sub menu / Nested Menu -->
+<mat-menu #appMenu='matMenu' xPosition='after' yPosition='above'>
+    <button mat-menu-item [matMenuTriggerFor]='subMenu'>FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+</mat-menu>
+
+<button [matMenuTriggerFor]='appMenu' class='btn1'>Menu</button>
+
+<mat-menu #subMenu='matMenu'>
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+</mat-menu>
+<!-- xPosition='before'/'after'   yPosition='above'/'below' -->
+
+<mat-menu #lazyMenu='matMenu'>
+    <ng-template matMenuContent let-name="name" let-hobby='hobby'>
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Hobby is {{hobby}}</button>
+        <button mat-menu-item>Logout {{name}}</button>
+    </ng-template>
+</mat-menu>
+
+<button mat-raised-button 
+    [matMenuTriggerData]="{name: 'Praveen', hobby: 'Learning'}"
+    [matMenuTriggerFor]='lazyMenu'
+    class='btn2'>Praveen
+</button>
+
+<button mat-raised-button 
+    [matMenuTriggerData]="{name: 'RL', hobby: 'Working'}"
+    [matMenuTriggerFor]='lazyMenu'>RL
+</button>

@@ -1,0 +1,25 @@
+<!-- Navbar -->
+<mat-toolbar color='warn' class='navbar'>
+    <div>Codevolution</div>
+    <div>
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+    </div>
+</mat-toolbar>
+<br><br><br>
+
+<!-- Sidenav -->
+<mat-sidenav-container>
+    <!-- <mat-sidenav #sidenav mode='side' [(opened)]='opened'>Sidenav</mat-sidenav> (or)-->
+    <mat-sidenav #sidenav mode='side' [(opened)]='opened' (opened)="log('Opened')" (closed)="log('Closed')">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main
+        <button (click)='opened=!opened'>Toggle open</button>
+        <button (click)='sidenav.open()'>Open</button>
+        <button (click)='sidenav.close()'>Close</button>
+        <button (click)='sidenav.toggle()'>Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!--(mat-sidenav)=> mode = over(default), push -->
+<!-- import FormsModule for using two-way binding for sidenav open and close. -->

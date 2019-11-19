@@ -1,0 +1,39 @@
+<div >
+    <button mat-button>mat-button</button>
+    <button mat-raised-button>mat-raised-button</button>
+    <button mat-stroked-button>mat-stroked-button</button>
+    <button mat-flat-button>mat-flat-button</button>
+    <br>
+    <!-- The below are circular button, mat-icon-button also a circular button -->
+    <button mat-icon-button id='icon'>mat-icon-button</button>
+    <button mat-fab>mat-fab</button>
+    <button mat-mini-fab>mat-mini-fab</button>
+
+    <!-- for routing -->
+    <a mat-button routerLink=".">Link</a>
+</div>
+
+<div>
+    <!-- Button Colors -->
+    <!-- mat-button -->
+    <button mat-button color='primary'>Primary</button>
+    <button mat-button color='accent'>Accent</button>
+    <button mat-button color='warn'>Warn</button>
+    <!-- mat-raised-button -->
+    <button mat-raised-button color='primary'>Primary</button>
+    <button mat-raised-button color='accent'>Accent</button>
+    <button mat-raised-button color='warn'>Warn</button>
+
+    <!-- disable ripple effect on click -->
+    <button mat-button disableRipple color='warn'>disableRipple</button>
+</div>
+
+<div>
+    <button mat-icon-button color='warn'>
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-fab color='accent'>
+        <mat-icon>favorite</mat-icon>
+    </button>
+</div>
+<!-- Refer material.angular.io -> button -> examples  -->

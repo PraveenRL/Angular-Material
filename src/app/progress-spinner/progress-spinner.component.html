@@ -1,0 +1,13 @@
+<!-- Progress Spinner -->
+<mat-progress-spinner value='20'></mat-progress-spinner>
+
+<button (click)='loadData()'>Load Data</button>
+<mat-spinner *ngIf='showSpinner' color='warn'></mat-spinner>
+<br><br><br><br>
+<!-- Progress Bar -->
+<div>
+    <mat-progress-bar mode='determinate' value='50'></mat-progress-bar><br>
+    <mat-progress-bar mode='indeterminate'></mat-progress-bar><br>
+    <mat-progress-bar mode='buffer'></mat-progress-bar><br>
+    <mat-progress-bar mode='query'></mat-progress-bar><br>
+</div>

@@ -1,0 +1,10 @@
+div{
+    margin: 5% 0 0 5%;
+}
+button{
+    margin-right: 3rem;
+}
+#icon{
+    /* Just for spacing, don't consider it */
+    margin-right: 100px;
+}

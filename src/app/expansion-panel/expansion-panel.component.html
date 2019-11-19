@@ -1,0 +1,39 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>Angular Fundamentals</mat-panel-title>
+        <mat-panel-description>Total Duration : 3hours</mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <p>This is the panel content. Add Course Details.</p>
+    <mat-action-row>
+        <!-- Row -->
+        <button mat-raised-button>Enroll</button>
+    </mat-action-row>
+</mat-expansion-panel>
+<br><br>
+
+<!-- Accordion => It is multiple expansion panel grouped together. For using this, simply user <mat-accodion>-->
+    <mat-accordion hideToggle>     <!-- multi="true" for independent open, hideToggle for hiding the toggle icon -->
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Angular Material</mat-panel-title>
+            <mat-panel-description>Total Duration : 3hours</mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is the panel content. Add Course Details.</p>
+        <mat-action-row>
+            <!-- Row -->
+            <button mat-raised-button>Enroll</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>Angular Material</mat-panel-title>
+            <mat-panel-description>Total Duration : 3hours</mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is the panel content. Add Course Details.</p>
+        <mat-action-row>
+            <!-- Row -->
+            <button mat-raised-button>Enroll</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>
